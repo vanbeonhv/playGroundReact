@@ -1,0 +1,17 @@
+{
+  "languages": {
+    "javascript": {
+      "rules": {
+        "S1854": {
+          "level": "off"
+        },
+        "ruleKeyToDisable2": {
+          "level": "off"
+        },
+        "ruleKeyToDisable3": {
+          "level": "off"
+        }
+      }
+    }
+  }
+}
