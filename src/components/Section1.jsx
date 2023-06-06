@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { generalStore } from '../store/generalStore';
+import { generalStore, trade5Store } from '../store/generalStore';
 import { Button } from 'antd';
 import { shallow } from 'zustand/shallow';
 
@@ -11,8 +11,11 @@ const Section1 = () => {
     }),
     shallow
   );
+  const { findingDetailList } = trade5Store();
+  const { severityPoint, frequencyPoint, points } = findingDetailList[0];
+  console.log(severityPoint);
 
-  console.log('firstBear: ', firstBear);
+  console.log('sec 1 re-render');
   const handleClick = () => {
     setFirstBear({ ...firstBear, name: 'male' });
   };
